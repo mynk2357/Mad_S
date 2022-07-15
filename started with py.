@@ -1,0 +1,19 @@
+secret_word="pump"
+guess = ""
+i=0 #guess_count
+j=3 #guess_limit
+out_of_guesses=False
+print("You have only 3 guess")
+print("It is related to Water")
+while guess!=secret_word and not(out_of_guesses) :
+    if i < j:
+        guess = input("Enter guess: ")
+        i=i+1
+    elif guess==secret_word and not(out_of_guesses):
+        print()
+    else:
+        out_of_guesses=True
+if out_of_guesses:
+        print("F_O_, Bitch")
+else:
+        print("You win")
